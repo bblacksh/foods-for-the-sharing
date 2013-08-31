@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <base target="_top">
+    
+    <!-- Tangle -->
+    <script type="text/javascript" src="Tangle.js"></script>
+
+    <!-- TangleKit -->
+    <link rel="stylesheet" href="TangleKit/TangleKit.css" type="text/css">
+    <script type="text/javascript" src="TangleKit/mootools.js"></script>
+    <script type="text/javascript" src="TangleKit/sprintf.js"></script>
+    <script type="text/javascript" src="TangleKit/BVTouchable.js"></script>
+    <script type="text/javascript" src="TangleKit/TangleKit.js"></script>
+
+	<script type="text/javascript">
+
+        function setUpTangle () {
+
+            var element = document.getElementById("lilPicante");
+
+            var tangle = new Tangle(element, {
+            	initialize: function () {
+        			this.bottles = 2;
+        			this.peppers = 1;  
+        			this.garlic = 1;
+        			this.vinegar = 2.5;
+        			this.cilantro = .25;
+        			this.onion = .5;
+        			this.tomatoes = .5;
+        			this.spices = .5;
+    			},
+    			update: function () {
+        			this.peppers = this.bottles * .5;          
+        			this.garlic = this.bottles * .5;
+        			this.vinegar = this.bottles * 1.25;
+        			this.cilantro = this.bottles * .125;
+        			this.onion = this.bottles * .25;
+        			this.tomatoes = this.bottles * .25;
+        			this.spices = this.bottles * .25;
+    			}
+			});
+		}
+    </script>
+    
+</head>
+<body onload="setUpTangle();">    
+<p align="center"><img src="lil picante.png" height="150" width="100"></p>
+<p>i am happy to share the recipe although  unfortunately cant provide you with exact quantities, 
+i havent gotten around to measuring it out so i usually just eyeball it and adjust to taste
+</p>
+<p id="lilPicante">
+makes <span class="TKAdjustableNumber" data-var="bottles" data-min="1" data-max="100"> bottles</span>
+<br>
+start with about <b data-var="peppers"> pounds o hot peppers</b>,<br> 
+<br>
+any type will do, i ve done it with jalapenos, serranos, cherry bombers, habaneros, or a blend o any o those, 
+<br>
+but really whatever ya got around or is easy to get works
+<br>
+<br>
+cut the tops off the peppers n throw em in a food processor or blender or chop em up real tiny if machines arent yer bag, include all the seeds!
+<br>
+<br>
+
+peel <b data-var="garlic"> whole heads of garlic</b><br> and add it to this, then grind it all up real nice
+<br>
+<br>
+
+then add some apple cider vinegar to the chunky mush, 
+<br>
+i would say start with about <b data-var="vinegar"> tablespoons</b><br> and you can add more later if it needs more o that vinegary bite
+<br>
+<br>
+
+next add about <b data-var="cilantro"> bunch o cilantro</b>,<br> 
+<br>
+and <b data-var="onion"> onions</b><br> if its a big one or a whole onion if its small-like and mix it up again
+<br>
+<br>
+
+then add about <b data-var="tomatoes"> cans</b><br> of crushed tomatoes 
+<br>
+and <b data-var="spices"> teaspoons</b><br> o both cumin and smoked paprika (if u dont have smoked paprika, chipotle powder also works and adds a little extra spice!)
+<br>
+
+thats about it, adjust all of these to taste at this point to get it balanced how you like it. 
+<br>
+sometimes i add a little honey and salt depending on how sweet or salty the canned tomatoes were 
+<br>
+or a little cayenne pepper if its not spicy enough
+<br>
+it usually takes a few rounds of tasting and adjustin after everythins in there to get it how you like it 
+<br>
+but this is fun because you can bust out the chips and have everyone try it and suggest what to add more of
+</p>
+
+</body>
+</html>
